@@ -14,5 +14,5 @@ while True:
     if response.status_code == 200:
         data = response.json()
         for movie in data.get("Search"): #  для фильмов в список вытащить пbreоиск
-            print(f" {movie['Title']} ({movie['Year']})") # выводим пользователю его результаты
+            print(f" {movie['Title']} ({movie['Year']}) ({movie['Type']}") # выводим пользователю его результаты
 
